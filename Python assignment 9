@@ -1,0 +1,52 @@
+In [7]:
+def sum_list(items):
+    sum_numbers = 0
+    for x in items:
+        sum_numbers += x
+    return sum_numbers
+print(sum_list([1,-10,-1]))
+-10
+In [10]:
+def multiply_list(items):
+    tot = 1
+    for x in items:
+        tot *= x
+    return tot
+print(multiply_list([12,2,-19]))
+-456
+In [20]:
+def find_len(list1): 
+    length = len(list1) 
+    list1.sort() 
+    print("Largest element is:", list1[length-1]) 
+    print("Smallest element is:", list1[0]) 
+    print("Second Largest element is:", list1[length-2]) 
+    print("Second Smallest element is:", list1[1]) 
+list1=[12, 45, 2, 41, 31, 10, 8, 6, 4] 
+Largest = find_len(list1)
+Largest element is: 45
+Smallest element is: 2
+Second Largest element is: 41
+Second Smallest element is: 4
+In [32]:
+def Remove(duplicate): 
+    final_list = [] 
+    for num in duplicate: 
+        if num not in final_list: 
+            final_list.append(num) 
+    return final_list 
+duplicate = [2, 4, 10, 20, 5, 2, 20, 4] 
+print(Remove(duplicate))
+[2, 4, 10, 20, 5]
+In [44]:
+def Enquiry(lis1): 
+    if not lis1: 
+        return 1
+    else: 
+        return 0
+lis1 = [] 
+if Enquiry(lis1): 
+    print ("The list is Empty") 
+else: 
+    print ("The list is not empty")
+The list is Empty
