@@ -1,0 +1,41 @@
+In [6]:
+original_list = [1,2,3,4]
+new_list = list(original_list)
+print(original_list)
+print(new_list)
+[1, 2, 3, 4]
+[1, 2, 3, 4]
+In [16]:
+color = ['Red', 'Green', 'White', 'Black', 'Pink', 'Yellow']
+color = [x for (i,x) in enumerate(color) if i not in (0,4,5)]
+print(color)
+['Green', 'White', 'Black']
+In [26]:
+list = [11, 22, 33, 44, 55]
+print("Original list:")
+print(list)
+for i  in list:
+    if(i%2 == 0):
+        list.remove(i)
+print("list after removing even numbers:")
+print(list)
+Original list:
+[11, 22, 33, 44, 55]
+list after removing even numbers:
+[11, 33, 55]
+In [32]:
+from random import shuffle
+color = ['Red', 'Green', 'White', 'Black', 'Pink', 'Yellow']
+shuffle(color)
+print(color)
+['White', 'Yellow', 'Pink', 'Black', 'Green', 'Red']
+In [66]:
+list1 = [1, 2, 4]
+list2 = [4, 5, 6]
+list_difference = []
+for item in list1:
+    if item not in list2:  
+        list_difference.append(item)
+
+print(list_difference)
+[1, 2]
